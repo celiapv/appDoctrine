@@ -4,13 +4,13 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once "bootstrap.php";
-require_once './src/EquipoDTO.php';
+require_once './src/Equipo.php';
 
 $nuevo = new Equipo();
-$nuevo->setNombre('Sevilla F.C.');
-$nuevo->setFundacion(1890);
-$nuevo->setSocios(50000);
-$nuevo->setCiudad('Sevilla');
+$nuevo->setNombre('Celia F.C.');
+$nuevo->setFundacion(2000);
+$nuevo->setSocios(60000);
+$nuevo->setCiudad('Cáceres');
 
 $entityManager->persist($nuevo);
 $entityManager->flush();

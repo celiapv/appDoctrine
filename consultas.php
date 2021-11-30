@@ -1,8 +1,11 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 require_once "bootstrap.php";
-require_once './src/JugadorDTO.php';
-require_once './src/EquipoDTO.php';
+require_once './src/Jugador.php';
+require_once './src/Equipo.php';
 
 
 /*Con findBy/findOneBy:

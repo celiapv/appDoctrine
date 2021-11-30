@@ -9,9 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
 * @ORM\Entity @ORM\Table(name="jugador")
 **/
-class Jugador
-
-{
+class Jugador{
 
    /** @ORM\Id @ORM\Column(type="integer") @ORM\GeneratedValue **/
    private $id;
@@ -26,7 +24,6 @@ class Jugador
     * @ORM\JoinColumn(name="equipo", referencedColumnName="id")
     **/
    private $equipo;
-
 
    public function getId(){
        return $this->id;

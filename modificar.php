@@ -1,7 +1,7 @@
 <?php
 
 require_once "bootstrap.php";
-require_once './src/EquipoDTO.php';
+require_once './src/Equipo.php';
 
 //$id = $_GET['id'];
 $id = 2;

@@ -5,11 +5,11 @@ error_reporting(E_ALL);
 // ejemplo_basicos.php
 
 require_once "bootstrap.php";
-require_once './src/EquipoDTO.php';
+require_once './src/Equipo.php';
 
 
 // buscar por clave primaria
-$equipo = $entityManager->find("EquipoDTO", 1);
+$equipo = $entityManager->find("Equipo", 1);
 
 // mostrar datos
 echo "Equipo: ".$equipo->getNombre()."</br>";
